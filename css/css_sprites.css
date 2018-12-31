@@ -1,0 +1,12 @@
+.bg-about1 {
+    width: 390px; height: 259px;
+    background: url('../img/about.png') -10px -10px;
+}
+.bg-about2 {
+    width: 390px; height: 259px;
+    background: url('../img/about.png') -420px -10px;
+}
+.bg-about3 {
+    width: 390px; height: 259px;
+    background: url('../img/about.png') -10px -289px;
+}
