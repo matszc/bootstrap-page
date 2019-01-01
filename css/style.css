@@ -246,8 +246,43 @@ h1{
 }
 #accordion{
     height:387px;
+    text-align: left;
+}
+#accordion button{
+    float: right;
+}
+#accordion span {
+    text-transform: uppercase;
+    margin: auto 20px;
+}
+.icon-picture , .icon-bullseye , .icon-sitemap{
+    color: #95e1d3;
+    font-size:35px;
+}
+.icon-angle-up{
+    font-size:30px;
+    color:#999999;
+}
+.icon-angle-down{
+    font-size:30px;
+    color:#999999;
 }
 
+/* slider */
+
+.slider{
+    padding: 40px 0;
+    margin-top:200px;
+    background-color:#eeeeee;
+    min-height:100px;
+}
+.icon-left-open , .icon-right-open{
+    color:black;
+}
+.quote{
+    padding: 20px auto;
+    max-width:500px;
+}
 /*extra large*/
 
 @media (max-width: 1200px) {
