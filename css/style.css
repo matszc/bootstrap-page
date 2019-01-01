@@ -216,9 +216,34 @@ h1{
 }
 /*for-all-divices*/
 .for-all-divices{
-    background: url("../img/bg.png");
-    min-height: 850px;
+    background: url("../img/bg.png") no-repeat;
+    height: 850px;
+    box-sizing: border-box;
     padding-top:40px;
+    text-align: center;
+    position: relative;
+}
+.for-all-divices img{
+    max-width: 100%;
+}
+.ipad{
+    margin-top:83px;
+}
+.iphone{
+    position: absolute;
+    right: 700px;
+    bottom: -80px;
+
+}
+
+/*extra large*/
+
+@media (max-width: 1200px) {
+
+    .iphone{
+        transform: scale(0.9);
+        right:240px;
+    }
 }
 
 /*large*/
@@ -235,6 +260,10 @@ h1{
     }
     .img{
         margin:auto 15px;
+    }
+    .iphone{
+        transform: scale(0.8);
+        right:160px;
     }
 
 }
@@ -268,6 +297,10 @@ h1{
         display: block;
         height: auto;
         border-bottom: 1px solid white;
+    }
+    .iphone{
+        transform: scale(0.7);
+        right:160px;
     }
 
 }
