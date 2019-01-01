@@ -231,19 +231,27 @@ h1{
 }
 .iphone{
     position: absolute;
-    right: 700px;
-    bottom: -80px;
+    left:calc(50% + 200px);
+    bottom: -100px;
+    transform:translateX(-50%);
 
+}
+
+/* what we do */
+.what-we-do{
+    padding-top:60px;
+}
+.what-we-do p{
+    margin-bottom:76px;
+}
+#accordion{
+    height:387px;
 }
 
 /*extra large*/
 
 @media (max-width: 1200px) {
 
-    .iphone{
-        transform: scale(0.9);
-        right:240px;
-    }
 }
 
 /*large*/
@@ -260,10 +268,6 @@ h1{
     }
     .img{
         margin:auto 15px;
-    }
-    .iphone{
-        transform: scale(0.8);
-        right:160px;
     }
 
 }
@@ -299,8 +303,9 @@ h1{
         border-bottom: 1px solid white;
     }
     .iphone{
-        transform: scale(0.7);
-        right:160px;
+        transform: scale(0.6);
+        bottom:-139px;
+        left:calc(50% + 50px);
     }
 
 }
@@ -312,5 +317,11 @@ h1{
     }
     h2{
         font-size: 30px;
+    }
+    .ipad{
+        transform: scaleX(0.9);
+    }
+    .iphone{
+        left:calc(50% + 10px);
     }
 }
