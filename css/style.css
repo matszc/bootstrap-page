@@ -280,9 +280,110 @@ h1{
     color:black;
 }
 .quote{
-    padding: 20px auto;
-    max-width:500px;
+    padding: auto;
+    margin:auto;
+    max-width:800px;
 }
+.quote-cloud{
+    display: inline-block;
+}
+.description{
+    display: inline-block;
+    justify-content: center;
+}
+.description-text{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-top:20px;
+}
+.description-line{
+    display: inline-flex;
+    padding:0;
+    margin:15px 10px 0 0;
+    float:left;
+}
+.author{
+    display: inline-flex;
+    float: left;
+    font-family: 'Dancing Script', cursive;
+    font-size:25px;
+    font-weight: 500;
+}
+
+/* map */
+.map {
+    background: url("../img/bg2.png") no-repeat;
+    margin-top:150px;
+    min-height: 200px;
+    padding-top:50px;
+}
+.map:hover{
+    cursor: pointer;
+}
+.map h3{
+    font-size:25px;
+    color:#f38181;
+}
+.map i{
+    font-size:20px;
+    color:#f38181;
+}
+.map span{
+    margin-top:0;
+}
+
+/* contact */
+
+.contact h6{
+    font-family: Tahoma, Geneva, sans-serif;
+    color:#cccccc;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.followers1{
+    margin-top:23px;
+    font-weight: 900;
+}
+.followers2{
+    margin-top:23px;
+}
+.follow-us{
+    margin-bottom:27px;
+}
+.follow-us span{
+    font-style: italic;
+    color: #999;
+}
+.follow-us a{
+    color:#95e1d3;
+    margin-left:10px;
+    font-size:20px;
+}
+.follow-us a:hover{
+    color:#80c1b3;
+}
+.contact button{
+    background-color: #95e1d3;
+    width: 150px;
+    border-color:#80c1b3 ;
+    margin:5px;
+}
+.contact button:hover{
+    background-color: #80c1b3;
+    border-color: #70b1a3;
+}
+.post-img{
+    display:inline-flex;
+    width: 120px;
+}
+.post-description{
+    display:inline-block;
+    width: calc(100% - 125px);
+}
+
+
 /*extra large*/
 
 @media (max-width: 1200px) {
@@ -358,5 +459,8 @@ h1{
     }
     .iphone{
         left:calc(50% + 10px);
+    }
+    .slider{
+        margin-top:300px;
     }
 }

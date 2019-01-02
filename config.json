@@ -71,6 +71,12 @@
       "css": "youtube",
       "code": 62229,
       "src": "modernpics"
+    },
+    {
+      "uid": "13289e807e02b1d46f2fe10d81d6fba6",
+      "css": "location-outline",
+      "code": 59396,
+      "src": "typicons"
     }
   ]
 }
