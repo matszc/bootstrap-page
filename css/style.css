@@ -374,6 +374,9 @@ h1{
     background-color: #80c1b3;
     border-color: #70b1a3;
 }
+.post{
+    cursor: pointer;
+}
 .post-img{
     display:inline-flex;
     width: 120px;
@@ -381,7 +384,38 @@ h1{
 .post-description{
     display:inline-block;
     width: calc(100% - 125px);
+    padding: 0 15px;
 }
+.contact h5{
+    text-transform: uppercase;
+    margin: 20px 0 ;
+    font-size: 17px;
+}
+.post-text{
+    font-size:13px;
+    color:#111111;
+    margin-bottom:5px;
+}
+.post-date{
+    color:#999999;
+    font-style:italic;
+    font-size:15px;
+}
+
+.instagram a{
+    color:#999999;
+    font-style:italic;
+}
+
+/* footer */
+
+.footer{
+
+}
+.footer span{
+    color:#f38181;
+}
+
 
 
 /*extra large*/
@@ -443,7 +477,6 @@ h1{
         bottom:-139px;
         left:calc(50% + 50px);
     }
-
 }
 /*small*/
 @media (max-width: 576px){
