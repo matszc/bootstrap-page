@@ -11,28 +11,30 @@
 
 </head>
 <body>
-<section class="home">
-<div class="container">
+<nav class="navbar navbar-expand-md bg-custom fixed-top">
+    <a class="navbar-brand" href="#home">MoGo</a>
 
-    <nav class="navbar main_menu navbar-expand-md navbar-fixed-top">
-        <a class="navbar-brand logo" href="#">MoGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+    aria-controls="mainmenu" aria-expanded="false" aria-label="nav-switch">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" >
-            <span class="navbar-toggler-icon" aria-controls="mainmenu" aria-expanded="false"></span>
-        </button>
+    <div class="collapse navbar-collapse" id="mainmenu">
+        <ul class="navbar-nav">
+            <li class="nav-item m-2"><a class="nav-link" href="#about">about</a> </li>
+            <li class="nav-item m-2"><a class="nav-link" href="#services">service</a> </li>
+            <li class="nav-item m-2"><a class="nav-link" href="#work">work</a> </li>
+            <li class="nav-item m-2"><a class="nav-link" href="#blog">blog</a> </li>
+            <li class="nav-item m-2"><a class="nav-link" href="#contact">contact</a> </li>
+        </ul>
+    </div>
 
-        <div class="collapse navbar-collapse" id="mainmenu">
-           <ul class="navbar-nav">
-               <li class="nav-item m-2"><a class="nav-link" href="#">about</a> </li>
-               <li class="nav-item m-2"><a class="nav-link" href="#">service</a> </li>
-               <li class="nav-item m-2"><a class="nav-link" href="#">work</a> </li>
-               <li class="nav-item m-2"><a class="nav-link" href="#">blog</a> </li>
-               <li class="nav-item m-2"><a class="nav-link" href="#">contact</a> </li>
-           </ul>
-        </div>
-    </nav>
+
+
+</nav>
+<section class="home container-fluid" id="home">
         <header>
-    <div class="text-center align-middle">
+    <div class="text-center header-content container">
         <h2>Creative Template</h2>
         <h1>Welcome to mongo</h1>
         <span class="card white-banner"></span>
@@ -41,7 +43,6 @@
        </button>
     </div>
      </header>
-</div>
 </section>
 
 <section id="about">
@@ -134,7 +135,7 @@
         </div>
     </div>
 </section>
-<section class="service">
+<section class="service" id="services">
     <div class="container text-center">
         <h4>We work with</h4>
         <h3>amazing services</h3>
@@ -212,12 +213,12 @@
             <img class="iphone" src="img/iphone.png" alt=""/>
 </section>
 
-<section class="what-we-do ">
+<section class="what-we-do " id="work">
     <div class="container text-center">
     <h4>Service</h4>
     <h3>what we do</h3>
     <span class="card red-banner"></span>
-    <p>On insensible possession oh particular attachment at excellence in. The books arose but miles happy she. It building
+    <p class="mb-5">On insensible possession oh particular attachment at excellence in. The books arose but miles happy she. It building
         contempt or interest children mistress of unlocked no. Offending
         she contained mrs led listening resembled. Delicate marianne absolute men dashwood landlord and offended.
         Suppose cottage between</p>
@@ -294,7 +295,7 @@
 
 </section>
 
-<section>
+<section id="blog">
     <div class="container-fluid slider text-center">
         <div id="carusele" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="carousel-inner">
@@ -358,7 +359,7 @@
 
 </section>
 
-<section class="contact container">
+<section class="contact container" id="contact">
     <div class="row">
         <div class="col-md-5 mogo">
             <h6>MoGo</h6>
@@ -429,5 +430,6 @@
 
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

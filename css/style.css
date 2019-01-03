@@ -24,50 +24,61 @@ h3{
     font-size:40px;
     font-weight: 700;
 }
+ /*menu*/
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+    background-color:#e78382 !important;
+    transition: background-color 0.7s linear;
+}
 
-/* menu */
-.main_menu{
+.nav{
     font-size:19px;
     min-height: 79px;
 }
 
-
-.logo{
+.navbar-brand{
    color:white;
     font-size:30px;
     font-weight: bold;
     margin-bottom:3px;
+    position: relative;
+    left:20%;
 }
-.logo:hover{
+.navbar-brand:hover{
     color:white;
 }
+.bg-custom {
+    background-color: transparent;
+}
+
 .nav-item{
     text-transform: uppercase;
 }
+
 .navbar-nav{
     position: absolute;
-    left:50%;
+    left:60%;
 }
-.navbar-toggler-icon{
-    color:white;
-}
+
 .navbar-nav > li > a{
     color:white;
     border-bottom:3px solid transparent;
     transition: all 0.3s;
 }
-
 .navbar-nav > li > a:hover{
     color:#fce38a;
     border-bottom:3px solid #fce38a;
-
 }
-
-/* toggle menu */
+/* toggle menu}*/
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+
 /* home */
 .home{
     background:url("../img/home1.png") no-repeat;
@@ -77,15 +88,16 @@ h3{
     position: relative;
     min-height: 1000px;
 }
-.container-fluid{
-    padding: 0;
+
+.header-content{
+    position: relative;
+    top:180px;
 }
 h2{
     font-family: 'Dancing Script', cursive;
     color:white;
     font-size:80px;
     font-weight:bold;
-    margin-top:120px;
 }
 h1{
     font-size:120px;
@@ -212,7 +224,6 @@ h1{
     color: black;
     text-transform: uppercase;
     font-size:16px;
-
 }
 /*for-all-divices*/
 .for-all-divices{
@@ -241,9 +252,6 @@ h1{
 .what-we-do{
     padding-top:60px;
 }
-.what-we-do p{
-    margin-bottom:76px;
-}
 #accordion{
     height:387px;
     text-align: left;
@@ -266,6 +274,17 @@ h1{
 .icon-angle-down{
     font-size:30px;
     color:#999999;
+}
+
+.card-body{
+    height:150px;
+    overflow-y: scroll;
+}
+.card-body p{
+    margin-bottom:10px;
+}
+.card-header{
+    max-height:70px;
 }
 
 /* slider */
@@ -439,6 +458,9 @@ h1{
     .img{
         margin:auto 15px;
     }
+    .navbar-brand{
+        position: static;
+    }
 
 }
 /*medium*/
@@ -476,6 +498,21 @@ h1{
         transform: scale(0.6);
         bottom:-139px;
         left:calc(50% + 50px);
+    }
+    .bg-custom{
+        background-color: #e78382;
+    }
+    .navbar-nav{
+        position: static;
+        text-align: center;
+    }
+    .navbar-nav > li > a{
+        border-bottom:none;
+        transition: all 0.3s;
+    }
+    .navbar-nav > li > a:hover{
+        color:#fce38a;
+        border-bottom:none;
     }
 }
 /*small*/
