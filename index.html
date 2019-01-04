@@ -352,10 +352,20 @@
     </div>
 </section>
 
-<section class="map container-fluid text-center">
+
+<section>
+<div class="map container-fluid text-center" data-toggle="collapse" data-target="#gmap">
     <i class="icon-location-outline"></i>
     <h3>open map</h3>
     <span class="card red-banner"></span>
+</div>
+
+    <div class="googleapi collapse" id="gmap">
+
+    </div>
+    <div class="map-close-wrapper d-none">
+        <i class="icon-cancel-1 map-close float-right " data-toggle="collapse" data-target="#gmap"></i>
+    </div>
 
 </section>
 
@@ -431,5 +441,6 @@
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNvK0mbhV_Zl9sZH5rHAnJ6WwApW-FQKs&callback=initMap" async defer></script>
 </body>
 </html>

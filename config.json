@@ -77,6 +77,12 @@
       "css": "location-outline",
       "code": 59396,
       "src": "typicons"
+    },
+    {
+      "uid": "5211af474d3a9848f67f945e2ccaf143",
+      "css": "cancel-1",
+      "code": 59398,
+      "src": "fontawesome"
     }
   ]
 }
