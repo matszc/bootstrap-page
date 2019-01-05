@@ -10,8 +10,8 @@
     <link type="text/css" rel="stylesheet" href="css/fontello.css"/>
 
 </head>
-<body>
-<nav class="navbar navbar-expand-md bg-custom fixed-top">
+<body data-spy="scroll" data-target="#navbar" data-offset="75">
+<nav class="navbar navbar-expand-md bg-custom fixed-top sticky" id="navbar">
     <a class="navbar-brand" href="#home">MoGo</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
@@ -20,7 +20,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="mainmenu">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav nav-pills">
             <li class="nav-item m-2"><a class="nav-link" href="#about">about</a> </li>
             <li class="nav-item m-2"><a class="nav-link" href="#services">service</a> </li>
             <li class="nav-item m-2"><a class="nav-link" href="#work">work</a> </li>
@@ -28,9 +28,6 @@
             <li class="nav-item m-2"><a class="nav-link" href="#contact">contact</a> </li>
         </ul>
     </div>
-
-
-
 </nav>
 <section class="home container-fluid" id="home">
         <header>
@@ -295,7 +292,7 @@
 
 </section>
 
-<section id="blog">
+<section>
     <div class="container-fluid slider text-center">
         <div id="carusele" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="carousel-inner">
@@ -352,6 +349,94 @@
     </div>
 </section>
 
+<section id="blog">
+    <div class="container text-center">
+    <h4>What we do</h4>
+    <h3>some of our work</h3>
+    <span class="card red-banner"></span>
+    <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aspernatur
+        quis laboriosam ducimus culpa non cupiditate numquam
+        dolorem reprehenderit at, ipsa odio, ullam excepturi consequuntur voluptate quidem ea consequatur rem.</p>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters text-center">
+            <div class="col-sm-3">
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work1.jpg"/>
+                </div>
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work2.jpg"/>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work3.jpg"/>
+                </div>
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work4.jpg"/>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work5.jpg"/>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work6.jpg"/>
+                </div>
+                <div class="overlay1">
+                    <div class="gradient1">
+                        <span class="icon1">
+                        <i class="icon-picture"></i>
+                        <p>creatively designed</p>
+                        </span>
+                    </div>
+                    <img class="img-fluid" src="img/work7.jpg"/>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 
 <section>
 <div class="map container-fluid text-center" data-toggle="collapse" data-target="#gmap">
@@ -388,8 +473,8 @@
                 <a href="https://twitter.com/" target="_blank"> <i class="icon-twitter-bird"></i></a>
             </div>
             <form class="form-inline">
-                <input class="form-control" type="text" placeholder="Your Email"/>
-                <button type="button" class="btn btn-info">Subscribe</button>
+                <input class="form-control" type="text"  name="email" placeholder="Your Email"/>
+                <button type="button" class="btn btn-info" onclick="validate(email.value);">Subscribe</button>
             </form>
 
         </div>
@@ -442,5 +527,6 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNvK0mbhV_Zl9sZH5rHAnJ6WwApW-FQKs&callback=initMap" async defer></script>
+<script type="text/javascript" src="js/email_test.js"></script>
 </body>
 </html>

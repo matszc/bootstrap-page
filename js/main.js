@@ -1,22 +1,27 @@
 
 $(document).ready(function () {
 
-    // sticky nav
-    var NavY = $('.navbar').offset().top;
+    // add background to navbar on load and scroll
 
-    var stickyNav = function () {
-        let scrollY = $(window).scrollTop();
+    var topPos = $(this).scrollTop();
 
-        if (scrollY > NavY)
-            $('.navbar').addClass('sticky');
-            else
-                $('.navbar').removeClass('sticky');
-        };
-    stickyNav();
+    if (topPos > 100) {
+        $('.navbar').addClass('navbar-background');
+    }
 
     $(window).scroll(function () {
-        stickyNav();
-    });
+        topPos = $(this).scrollTop();
+
+        if (topPos < 50) {
+            $('.navbar').removeClass('navbar-background');
+        }
+
+        if (topPos > 50) {
+            $('.navbar').addClass('navbar-background');
+        }
+    })
+
+
 
     //page scroll
     function scroll(link) {
@@ -28,11 +33,10 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: ($(target).offset().top)-74
         }, 800);
-
-        location.hash = target;
     }
 
     $('.nav-link').click(scroll);
+    $('.navbar-brand').click(scroll);
 
     // Counter on scroll
  var a = 0;
@@ -84,3 +88,4 @@ function initMap() {
         zoom: 16
     });
 }
+
